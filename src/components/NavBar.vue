@@ -1,13 +1,3 @@
-<!-- <template>
-    <nav class="sticky top-0 z-50 flex items-center w-full px-2 py-5 space-x-14 md:items-start md:justify-evenly dark:bg-inherit dark:text-white dark:bg-black">
-        <RouterLink to="/" class="relative transition-colors hover:text-white" active-class="text-white after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-[2px] after:bg-white"
-        exact>Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/project">Projects</RouterLink>
-    </nav>
-  <RouterView/>
-</template> -->
-
 <script setup>
 import { useRoute, useRouter } from "vue-router";
 import { ref, watch } from "vue";
@@ -48,7 +38,7 @@ const activeLink =
   <div class="min-h-screen overflow-hidden dark:bg-black dark:text-white">
     <!-- Navbar -->
     <nav
-      class="sticky top-0 z-50 flex items-center w-full px-2 py-5 text-gray-300 bg-black space-x-14 md:justify-evenly"
+      class="sticky top-0 z-10 flex items-center w-full px-2 py-5 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
     >
       <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
         Home
