@@ -5,15 +5,15 @@ const isModalOpen = ref(false);
 
 </script>
 <template>
-    <div class="flex flex-col items-center justify-center w-full px-2 space-y-5 md:items-start md:space-y-5 dark: bg-inherit md:max-w-80">
+    <div class="flex flex-col items-center justify-center w-full px-2 space-y-5 md:items-start md:space-y-5 dark: bg-inherit md:max-w-72">
         <img src="../assets/images/MeAgentFB.jpg"class="w-full rounded-lg drop-shadow" alt="">
         <div class="flex items-center justify-between w-full">
             <div class="flex flex-col w-1/2 items-start space-y-0.5 md:items-start">
-                <p class="space-x-2 text-lg uppercase dark:text-gray-100"><span class="font-semibold">Murigu</span><span class="font-medium">Gitonga</span></p>
-                <p class="text-lg text-gray-800 dark:text-gray-400">Software Engineer</p>
+                <p class="space-x-2 text-lg uppercase md:text-sm dark:text-gray-100"><span class="font-semibold">Murigu</span><span class="font-medium">Gitonga</span></p>
+                <p class="text-lg text-gray-800 md:text-sm dark:text-gray-400">Software Engineer</p>
             </div>
-            <div class="flex w-1/2 items-center justify-center">
-                <button @click="isModalOpen = true" class="bg-green-800 rounded-xl w-full text-gray-200 px-8 py-4">
+            <div class="flex items-center justify-center w-1/2">
+                <button @click="isModalOpen = true" class="w-full px-8 py-2.5 text-gray-200 bg-green-800 rounded-xl">
                     <span class="text-lg">Message</span>
                 </button>
                 <MessageModal :isOpen="isModalOpen" @close="isModalOpen = false"/>
