@@ -16,9 +16,9 @@ watch(
     const currentIndex = routeOrder.indexOf(route.path);
 
     if (currentIndex > previousIndex) {
-      transitionName.value = "slide-left"; // Forward (Home → About)
+      transitionName.value = "slide-left"; // Forward (Home -> About)
     } else if (currentIndex < previousIndex) {
-      transitionName.value = "slide-right"; // Backward (Projects → About)
+      transitionName.value = "slide-right"; // Backward (Projects -> About)
     }
 
     previousIndex = currentIndex;
@@ -39,7 +39,7 @@ const activeLink =
   <div class="min-h-screen overflow-hidden dark:bg-black dark:text-white">
     <!-- Navbar -->
     <nav
-      class="sticky top-0 z-10 flex items-center w-full px-2 py-5 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
+      class="sticky w-full top-0 z-10 text-[18px] flex items-center px-2 py-5 text-gray-800 dark:text-gray-400 bg-inherit space-x-14 md:justify-evenly"
     >
       <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
         Home
@@ -60,8 +60,8 @@ const activeLink =
       </RouterLink>
     </nav>
 
-    <!-- ✅ Correct Vue 3.4+ RouterView syntax -->
-    <main class="relative overflow-hidden">
+    <!-- Vue3 + vue-router 4-->
+    <main class="relative w-full overflow-hidden">
       <RouterView v-slot="{ Component }">
         <Transition :name="transitionName" mode="out-in">
           <component :is="Component" :key="route.fullPath" />

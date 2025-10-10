@@ -9,7 +9,7 @@ import SelfSection from './components/selfSection.vue';
   <div class="block bg-slate-200 dark:bg-[#010101] transition-all ease-in-out duration-300">
     <div class="flex flex-col min-h-screen pt-5 space-y-6 md:container md:mx-auto">
       <headerComponent/>
-      <div class="flex flex-col items-start space-y-8 md:flex-row">
+      <div class="relative flex flex-col items-start space-y-8 md:flex-row">
         <SelfSection/>
         <MainSection/>
       </div>

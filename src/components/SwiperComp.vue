@@ -35,10 +35,10 @@ const slides = [
   >
     <!-- Fading edges -->
     <div
-      class="absolute inset-y-0 left-0 z-10 w-1/5 pointer-events-none bg-gradient-to-r from-white/60 via-transparent to-transparent dark:from-gray-900"
+      class="absolute inset-y-0 left-0 z-10 w-1/5 pointer-events-none bg-gradient-to-r from-white/60 via-transparent to-transparent dark:from-[#202122]"
     ></div>
     <div
-      class="absolute inset-y-0 right-0 z-10 w-1/5 pointer-events-none bg-gradient-to-l from-white/60 via-transparent to-transparent dark:from-gray-900"
+      class="absolute inset-y-0 right-0 z-10 w-1/5 pointer-events-none bg-gradient-to-l from-white/60 via-transparent to-transparent dark:from-[#202122]"
     ></div>
 
     <!-- Swiper Carousel -->
