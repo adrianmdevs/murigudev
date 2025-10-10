@@ -44,7 +44,7 @@ const handleOverlayClick = (e) => {
   >
     <div
       v-if="isOpen"
-      class="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-sm"
+      class="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-sm min-h-screen"
       @click="handleOverlayClick"
     >
       <!-- Modal content container -->
@@ -56,16 +56,12 @@ const handleOverlayClick = (e) => {
           @click="$emit('close')"
           class="absolute text-3xl text-black transition-colors dark:text-white top-3 right-3 hover:text-red-500"
         >
-          <svg viewBox="0 0 24 24" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m15.5 10v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h-3v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1h-1v-2h-1v-1h-1v-1h-7v1h1v1h1v1h1v2h1v1h1v2h1v1h1v2h1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h3v-1h1v-1h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v2h1v1h1v1h7v-1h-1v-1h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1zm0 4v1h1v2h1v1h1v2h-3v-2h-1v-1h-1v-1h-1v-2h-1v-1h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1h-1v-2h3v1h1v2h1v1h1v2h1v1h1v1h1v2z"
-            />
-          </svg>
+          X
         </button>
 
         <!-- Modal content -->
         <div class="flex flex-col text-gray-900">
-          <h2 class="mb-4 text-lg font-semibold text-start dark:text-gray-50">
+          <h2 class="mb-4 text-[18px] font-semibold text-start dark:text-gray-50">
             Send me a message
           </h2>
 
