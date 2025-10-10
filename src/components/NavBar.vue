@@ -1,37 +1,38 @@
 <script setup>
-import { useRoute, useRouter } from "vue-router";
+import { useRoute } from "vue-router";
 import { ref, watch } from "vue";
 
 const route = useRoute();
-const router = useRouter();
+const transitionName = ref("slide-left");
 
-const transitionName = ref("slide-left"); // default animation direction
+// Define route order manually
+const routeOrder = ["/", "/about", "/project"];
 
-// Keep track of navigation history index
-let previousDepth = 0;
+let previousIndex = routeOrder.indexOf(route.path);
 
 watch(
   () => route.fullPath,
   () => {
-    const currentDepth = route.fullPath.split("/").filter(Boolean).length;
+    const currentIndex = routeOrder.indexOf(route.path);
 
-    // If going deeper → slide left, if going back → slide right
-    transitionName.value =
-      currentDepth > previousDepth ? "slide-left" : "slide-right";
+    if (currentIndex > previousIndex) {
+      transitionName.value = "slide-left"; // Forward (Home → About)
+    } else if (currentIndex < previousIndex) {
+      transitionName.value = "slide-right"; // Backward (Projects → About)
+    }
 
-    previousDepth = currentDepth;
+    previousIndex = currentIndex;
   },
   { immediate: true }
 );
 
 const isActive = (path) => route.path === path;
 
-// Reusable classes
 const baseLink =
   "relative transition-all duration-300 hover:text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:opacity-0 after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full hover:after:opacity-100";
 
 const activeLink =
-  "text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-4px] after:w-full after:h-[2px] after:bg-white after:opacity-100 after:-translate-x-1/2";
+  "text-blue-600 dark:text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-4px] after:w-full after:h-[2px] after:bg-white after:opacity-100 after:-translate-x-1/2";
 </script>
 
 <template>
@@ -59,45 +60,50 @@ const activeLink =
       </RouterLink>
     </nav>
 
-    <!-- Main content with directional slide transition -->
+    <!-- ✅ Correct Vue 3.4+ RouterView syntax -->
     <main class="relative overflow-hidden">
-      <Transition :name="transitionName" mode="out-in">
-        <RouterView :key="route.fullPath" />
-      </Transition>
+      <RouterView v-slot="{ Component }">
+        <Transition :name="transitionName" mode="out-in">
+          <component :is="Component" :key="route.fullPath" />
+        </Transition>
+      </RouterView>
     </main>
   </div>
 </template>
 
 <style scoped>
-/* === Slide Left === */
+/* === Shared fade for all slides === */
 .slide-left-enter-active,
-.slide-left-leave-active {
-  transition: all 0.45s ease;
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* === Slide Left (Forward) === */
 .slide-left-enter-from {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(80px);
 }
 .slide-left-leave-to {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-80px);
 }
 
-/* === Slide Right === */
-.slide-right-enter-active,
-.slide-right-leave-active {
-  transition: all 0.45s ease;
-}
-
+/* === Slide Right (Backward) === */
 .slide-right-enter-from {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-80px);
 }
 .slide-right-leave-to {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(80px);
+}
+
+/* Smooth fade overlay feeling */
+.slide-left-enter-to,
+.slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0);
 }
 </style>
-
-
