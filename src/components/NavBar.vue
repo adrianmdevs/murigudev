@@ -5,7 +5,7 @@ import { ref, watch } from "vue";
 const route = useRoute();
 const transitionName = ref("slide-left");
 
-// Define route order manually
+// route order
 const routeOrder = ["/", "/about", "/project"];
 
 let previousIndex = routeOrder.indexOf(route.path);

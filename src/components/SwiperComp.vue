@@ -31,7 +31,7 @@ const slides = [
 
 <template>
   <div
-    class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-lg"
+    class="relative w-full overflow-hidden rounded-lg md:h-1/2 md:max-w-fit lg:max-w-4xl"
   >
     <!-- Fading edges -->
     <div
@@ -50,17 +50,17 @@ const slides = [
       :speed="1000"
       pagination
       navigation
-      class="rounded-xl"
+      class="rounded-none"
     >
       <SwiperSlide
         v-for="(slide, i) in slides"
         :key="i"
-        class="relative w-full h-[70vh] sm:h-[60vh] md:h-[75vh] lg:h-[80vh] overflow-hidden flex items-center justify-center"
+        class="relative flex items-center justify-center w-full h-auto overflow-hidden md:w-3/4"
       >
         <img
           :src="slide.img"
           :alt="slide.title"
-          class="object-cover w-full h-full transition-transform duration-[2000ms] ease-in-out hover:scale-105"
+          class="object-cover w-full h-full transition-transform duration-[2000ms] ease-in-out"
         />
 
         <!-- Overlay -->
@@ -97,8 +97,8 @@ const slides = [
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.7);
   opacity: 1;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   border-radius: 9999px;
   margin: 0 6px !important;
   transition: all 0.4s ease;

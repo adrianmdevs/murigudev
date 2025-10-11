@@ -4,7 +4,7 @@ import NavBar from './NavBar.vue';
 
 </script>
 <template>
-    <div class="block w-full items-center justify-center">
+    <div class="items-center justify-center block w-full shadow-lg">
          <NavBar/>
     </div>  
 </template>
