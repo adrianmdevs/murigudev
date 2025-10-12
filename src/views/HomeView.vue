@@ -9,7 +9,7 @@ import SwiperComp from '../components/SwiperComp.vue';
 
 </script>
 <template>
-    <div class="flex min-h-screen bg-white flex-col pt-0.5 px-0.5 space-y-14 pb-4 w-full rounded-lg dark:bg-[#202122]">
+    <div class="flex min-h-screen mt-10 bg-white flex-col pt-0.5 px-0.5 space-y-14 pb-4 w-full rounded-lg dark:bg-[#202122]">
         <SwiperComp/>
         <!-- <HeroSect/> -->
         <CustomDivider/>

@@ -4,7 +4,6 @@
             <div class="flex items-center text-[16px] justify-between w-full pb-3 border-b-2 border-green-500">
                 <span>Blog</span>
                 <img src="../assets/icons/navigation-arrow-arrows-direction-right-icon.svg" alt="">
-
             </div>
             <div class="flex justify-between">
                 <!--Socials-->

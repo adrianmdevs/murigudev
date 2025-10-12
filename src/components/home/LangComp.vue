@@ -10,7 +10,7 @@ import SectHeader from '../SectHeader.vue';
             <!--Design-->
             <div class="w-full p-3 border border-gray-300 rounded-lg">
                 <span>Graphic & Web Design</span>
-                <div class="grid grid-cols-2">
+                <div class="grid grid-cols-3 md:grid-cols-2">
                     <div class="flex flex-col space-y-2">
                         <img src="/src/assets/icons/figma-svgrepo-com.svg" class="w-12 h-12" alt="">
                         <span>Figma</span>
@@ -29,8 +29,8 @@ import SectHeader from '../SectHeader.vue';
             </div>
             <!--Frontend-->
             <div class="w-full p-3 border border-gray-300 rounded-lg">
-                <span>Front-End</span>
-                <div class="grid grid-cols-2">
+                <span class="text-xl font-semibold tracking-wide">Front-End</span>
+                <div class="grid grid-cols-3 md:grid-cols-2">
                     <div class="flex flex-col space-y-2">
                         <img src="/src/assets/icons/html-5-svgrepo-com.svg" class="w-12 h-12" alt="">
                         <span>HTML 5</span>
@@ -51,8 +51,8 @@ import SectHeader from '../SectHeader.vue';
             </div>
             <!--BackEnd-->
             <div class="w-full p-3 border border-gray-300 rounded-lg">
-                <span>Back-End</span>
-                <div class="grid grid-cols-2">
+                <span class="text-xl font-semibold tracking-wide">Back-End</span>
+                <div class="grid w-full grid-cols-3">
                     <div class="flex flex-col space-y-2">
                         <img src="/src/assets/icons/php.svg" class="w-12 h-12" alt="">
                         <span>PHP</span>
@@ -70,7 +70,24 @@ import SectHeader from '../SectHeader.vue';
                 </div>
 
             </div>
-            
+            <!--Frameworks-->
+            <div class="w-full p-3 border border-gray-300 rounded-lg bg-gradient-to-br from-green-950 via-red-950 to-violet-950 text-gray-50">
+                <span class="text-xl font-semibold tracking-wide">Frameworks</span>
+                <div class="grid w-full grid-cols-3 md:grid-cols-2">
+                    <div class="flex flex-col space-y-2">
+                        <img src="/src/assets/icons/tailwindcss-icon.svg" class="w-12 h-12" alt="">
+                        <span>Tailwindcss</span>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <img src="/src/assets/icons/vue-vuejs-javascript-js-framework.svg" class="w-12 h-12" alt="">
+                        <span>Vue3.js</span>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <img src="/src/assets/icons/laravel.svg" class="w-12 h-12" alt="">
+                        <span>Laravel</span>
+                    </div>
+                </div>
+            </div>           
         </div>
     </div>
 </template>

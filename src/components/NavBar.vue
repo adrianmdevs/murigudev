@@ -29,17 +29,17 @@ watch(
 const isActive = (path) => route.path === path;
 
 const baseLink =
-  "relative transition-all duration-300 hover:text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:opacity-0 after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full hover:after:opacity-100";
+  "relative transition-all duration-300 hover:text-gray-700 darK:hover:text-gray-50 after:content-[''] after:absolute after:left-1/2 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:opacity-0 after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full hover:after:opacity-100";
 
 const activeLink =
-  "text-blue-600 dark:text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-4px] after:w-full after:h-[2px] after:bg-white after:opacity-100 after:-translate-x-1/2";
+  "text-blue-800 dark:text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-10px] after:w-full after:h-[2px] after:bg-black dark:after:bg-gray-50 after:opacity-100 after:-translate-x-1/2";
 </script>
 
 <template>
-  <div class="min-h-screen overflow-hidden dark:bg-black dark:text-white">
+  <div class="min-h-screen py-4 overflow-hidden dark:bg-black dark:text-white">
     <!-- Navbar -->
     <nav
-      class="sticky w-full top-0 z-10 text-[18px] flex items-center px-2 py-5 text-gray-800 dark:text-gray-400 bg-inherit space-x-14 md:justify-evenly"
+      class="sticky w-full border-b border-gray-50 top-0 z-10 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-400 bg-inherit space-x-14 md:justify-evenly"
     >
       <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
         Home
