@@ -3,8 +3,6 @@ import FooterComp from './components/FooterComp.vue';
 import HeaderComponent from './components/HeaderComponent.vue'
 import MainSection from './components/MainSection.vue';
 import SelfSection from './components/selfSection.vue';
-//import NavBar from './components/NavBar.vue';
-
 </script>
 <template>
   <div class="block bg-slate-200 dark:bg-[#010101] transition-all ease-in-out duration-300">
@@ -12,7 +10,7 @@ import SelfSection from './components/selfSection.vue';
       <headerComponent/>
       <div class="relative flex flex-col items-start space-y-8 md:flex-row">
         <SelfSection/>
-        <div class="block w-full px-3 rounded-xl">
+        <div class="relative block w-full px-3 rounded-xl">
            <MainSection/>
         </div>
       </div>

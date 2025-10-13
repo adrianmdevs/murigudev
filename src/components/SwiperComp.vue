@@ -47,7 +47,7 @@ const slides = [
       :slides-per-view="1"
       :loop="true"
       :autoplay="{ delay: 4000, disableOnInteraction: false }"
-      :speed="1000"
+      :speed="3000"
       pagination
       navigation
       class="rounded-none"
@@ -79,15 +79,9 @@ const slides = [
           </p>
         </div>
       </SwiperSlide>
-
       <!-- Navigation arrows -->
-      <div
-        class="absolute z-20 -translate-y-1/2 swiper-button-prev after:hidden left-2 md:left-6 top-1/2"
-      ></div>
-
-      <div
-        class="absolute z-20 -translate-y-1/2 swiper-button-next after:hidden right-2 md:right-6 top-1/2"
-      ></div>
+      <div class="absolute z-20 -translate-y-1/2 swiper-button-prev after:hidden left-2 md:left-6 top-1/2"></div>
+      <div class="absolute z-20 -translate-y-1/2 swiper-button-next after:hidden right-2 md:right-6 top-1/2"></div>
     </Swiper>
   </div>
 </template>

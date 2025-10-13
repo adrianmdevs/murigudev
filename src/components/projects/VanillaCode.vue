@@ -1,6 +1,11 @@
+<script setup>
+import SectHeader from '../SectHeader.vue';
+
+    
+</script>
 <template>
     <div class="flex flex-col">
-        <span>Vanilla Code</span>
+        <SectHeader message="Vanilla code"/>
         <div class="flex flex-col space-y-2">
             <p>This section contains vanilla source code</p>
             <p>You can click each repo to view the code</p>

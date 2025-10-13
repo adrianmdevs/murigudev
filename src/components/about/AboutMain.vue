@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-col space-y-4">
-        <div>
+    <div class="flex flex-col ps-1.5 space-y-4">
+        <div class="block w-1/2 pb-3 overflow-x-auto border-b border-black">
             <span class="text-3xl font-bold dark:text-white">About Myself</span>
         </div>
         <!--About Container-->
-        <div class="flex flex-col space-y-12 items-center justify-center">
+        <div class="flex flex-col items-center justify-center space-y-12">
             <!--Graphic designer-->
             <div class="flex flex-col space-y-2 px-2.5 md:max-w-96">
                 <img src="/src/assets/images/jungleView.jpeg" alt="">

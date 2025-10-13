@@ -2,14 +2,17 @@
 import DesignComp from '../components/projects/DesignComp.vue';
 import CustomDivider from '../components/CustomDivider.vue'
 import VanillaCode from '../components/projects/VanillaCode.vue';
+import FrameWorks from '../components/projects/FrameWorks.vue';
 
 </script>
 <template>
-    <div class="flex min-h-screen mt-10 bg-white flex-col pt-10 space-y-5 w-full rounded-lg dark:bg-[#202122]">
+    <div class="flex min-h-screen mt-10 bg-white flex-col pt-10 space-y-10 w-full rounded-lg dark:bg-[#202122]">
         <!--Design Comp-->
         <DesignComp/>
         <CustomDivider/>
         <VanillaCode/>
+        <CustomDivider/>
+        <FrameWorks/>
         
     </div>
 </template>

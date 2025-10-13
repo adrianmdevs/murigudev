@@ -1,25 +1,42 @@
 <template>
     <footer class="block mx-2">
         <div class="flex flex-col space-y-3">
-            <div class="flex items-center text-[16px] justify-between w-full pb-3 border-b-2 border-green-500">
+            <div class="flex items-center text-[18px] justify-between w-full pb-3 border-b-2 border-green-500">
                 <span>Blog</span>
                 <img src="../assets/icons/navigation-arrow-arrows-direction-right-icon.svg" alt="">
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between dark:text-gray-200">
                 <!--Socials-->
                 <nav class="flex flex-col space-y-4">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+                    <a href="#">
+                        <svg viewBox="0 0 16 16" class="w-12 h-12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m15.1109513 15.9937079c.4874307 0 .8826367-.395266.8826367-.8826967v-14.22831457c0-.48761049-.3952659-.88269663-.8826367-.88269663h-14.22825467c-.48761049 0-.88269663.39514607-.88269663.88269663v14.22825467c0 .4874906.39508614.8826966.88269663.8826966h14.22825467zm-4.0756255 0v-6.19361801h2.0789214l.3112509-2.41378277h-2.3902322v-1.54109364c0-.69884644.1940375-1.17507116 1.1962247-1.17507116l1.2781424-.00059925v-2.15886142c-.2210637-.0293633-.9798352-.09510113-1.862472-.09510113-1.84287636 0-3.10453928 1.12485394-3.10453928 3.19065169v1.78007491h-2.08425468v2.41378277h2.08425468v6.19355801h2.49270408z" fill="#485a96" fill-rule="evenodd"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="flex items-center">
+                        <svg viewBox="0 0 24 24" class="w-12 h-12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m15.5 10v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h-3v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1h-1v-2h-1v-1h-1v-1h-7v1h1v1h1v1h1v2h1v1h1v2h1v1h1v2h1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h3v-1h1v-1h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v2h1v1h1v1h7v-1h-1v-1h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1zm0 4v1h1v2h1v1h1v2h-3v-2h-1v-1h-1v-1h-1v-2h-1v-1h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1h-1v-2h3v1h1v2h1v1h1v2h1v1h1v1h1v2z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="w-12 h-12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.35408 0.645996H4.18742C2.404 0.645996 0.958252 2.09174 0.958252 3.87516V9.04183C0.958252 10.8252 2.404 12.271 4.18742 12.271H9.35408C11.1375 12.271 12.5833 10.8252 12.5833 9.04183V3.87516C12.5833 2.09174 11.1375 0.645996 9.35408 0.645996ZM11.4529 9.04187C11.4493 10.1996 10.5117 11.1373 9.35391 11.1408H4.18725C3.0295 11.1373 2.09183 10.1996 2.08829 9.04187V3.8752C2.09183 2.71745 3.0295 1.77979 4.18725 1.77625H9.35391C10.5117 1.77979 11.4493 2.71745 11.4529 3.8752V9.04187ZM9.83829 4.03666C10.195 4.03666 10.4841 3.74751 10.4841 3.39083C10.4841 3.03414 10.195 2.745 9.83829 2.745C9.48161 2.745 9.19246 3.03414 9.19246 3.39083C9.19246 3.74751 9.48161 4.03666 9.83829 4.03666ZM6.77058 3.55225C5.16551 3.55225 3.86433 4.85343 3.86433 6.4585C3.86433 8.06358 5.16551 9.36475 6.77058 9.36475C8.37566 9.36475 9.67683 8.06358 9.67683 6.4585C9.67855 5.68719 9.37291 4.94698 8.82751 4.40158C8.28211 3.85617 7.5419 3.55053 6.77058 3.55225ZM4.99454 6.45854C4.99454 7.43942 5.7897 8.23458 6.77058 8.23458C7.75146 8.23458 8.54662 7.43942 8.54662 6.45854C8.54662 5.47766 7.75146 4.6825 6.77058 4.6825C5.7897 4.6825 4.99454 5.47766 4.99454 6.45854Z" fill="#707070"/>
+                        </svg>
+                    </a>
                 </nav>
-                <img src="../assets/images/murigu.png" class="h-auto w-28" alt="">
-                <nav class="flex flex-col space-y-4">
-                    <a href="#">LinkedIn</a>
-                    <a href="#">GMAIL</a>
+                <img src="../assets/images/murigu.png" class="w-1/3 h-auto" alt="">
+                <nav class="flex flex-col space-y-4 dark:text-gray-200">
+                    <a href="#">
+                        <svg class="w-12 h-12" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="m116 3h-104a8.91 8.91 0 0 0 -9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81v-104.42a8.93 8.93 0 0 0 -9-8.77z" fill="#0076b2"/><g fill="#fff"><path d="m21.06 48.73h18.11v58.27h-18.11zm9.06-29a10.5 10.5 0 1 1 -10.5 10.49 10.5 10.5 0 0 1 10.5-10.49"/><path d="m50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41 18.34-.04 21.74 12.03 21.74 27.68v32h-18.11v-28.35c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15v28.79h-18.08z"/></g></svg>
+                        
+                    </a>
+                    <a href="#">
+                        <svg fill="none" class="w-12 h-12" viewBox="0 0 92 92" width="92" xmlns="http://www.w3.org/2000/svg"><path d="m21.6354 66h8.4828v-20.6008l-12.1182-9.0887v26.0541c0 2.0116 1.6299 3.6354 3.6354 3.6354z" fill="#4285f4"/><path d="m59.2031 66h8.4827c2.0117 0 3.6355-1.6298 3.6355-3.6354v-26.0541l-12.1182 9.0887" fill="#34a853"/><path d="m59.2031 29.6458v15.7536l12.1182-9.0886v-4.8473c0-4.4959-5.1321-7.0588-8.7251-4.3626" fill="#fbbc04"/><path d="m30.1172 45.3991v-15.7536l14.5418 10.9064 14.5418-10.9064v15.7536l-14.5418 10.9064" fill="#ea4335"/><path d="m18 31.4635v4.8473l12.1182 9.0886v-15.7536l-3.3931-2.5449c-3.5991-2.6962-8.7251-.1333-8.7251 4.3626z" fill="#c5221f"/></svg>
+                    </a>
                     <a href="#">Discord</a>
                 </nav>
             </div>
-            <div class="flex justify-center mx-12 border-t border-green-500 border-x rounded-t-xl">
+            <div class="flex justify-center mx-12 border-t border-green-500 border-x rounded-t-xl dark:text-gray-100">
                 <div class="flex flex-col items-center">
                     <p>Powered by Vue3, tailwind and strapi</p>
                     <p>Murigu Gitonga 2025</p>
