@@ -30,59 +30,61 @@ const slides = [
 </script>
 
 <template>
-  <div
-    class="relative w-full overflow-hidden rounded-lg md:h-1/2 md:max-w-fit lg:max-w-4xl"
-  >
-    <!-- Fading edges -->
+  <div class="block w-full md:hidden md:max-w-screen-sm lg:max-w-screen-xl">
     <div
-      class="absolute inset-y-0 left-0 z-10 w-1/5 pointer-events-none bg-gradient-to-r from-white/60 via-transparent to-transparent dark:from-[#202122]"
-    ></div>
-    <div
-      class="absolute inset-y-0 right-0 z-10 w-1/5 pointer-events-none bg-gradient-to-l from-white/60 via-transparent to-transparent dark:from-[#202122]"
-    ></div>
-
-    <!-- Swiper Carousel -->
-    <Swiper
-      :modules="[Autoplay, Pagination, Navigation]"
-      :slides-per-view="1"
-      :loop="true"
-      :autoplay="{ delay: 4000, disableOnInteraction: false }"
-      :speed="3000"
-      pagination
-      navigation
-      class="rounded-none"
+      class="relative w-full overflow-hidden rounded-lg"
     >
-      <SwiperSlide
-        v-for="(slide, i) in slides"
-        :key="i"
-        class="relative flex items-center justify-center w-full h-auto overflow-hidden md:w-3/4"
-      >
-        <img
-          :src="slide.img"
-          :alt="slide.title"
-          class="object-cover w-full h-full transition-transform duration-[2000ms] ease-in-out"
-        />
+      <!-- Fading edges -->
+      <div
+        class="absolute inset-y-0 left-0 z-10 w-1/5 pointer-events-none bg-gradient-to-r from-white/60 via-transparent to-transparent dark:from-[#202122]"
+      ></div>
+      <div
+        class="absolute inset-y-0 right-0 z-10 w-1/5 pointer-events-none bg-gradient-to-l from-white/60 via-transparent to-transparent dark:from-[#202122]"
+      ></div>
 
-        <!-- Overlay -->
-        <div
-          class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center bg-black/40 backdrop-blur-sm"
+      <!-- Swiper Carousel -->
+      <Swiper
+        :modules="[Autoplay, Pagination, Navigation]"
+        :slides-per-view="1"
+        :loop="true"
+        :autoplay="{ delay: 4000, disableOnInteraction: false }"
+        :speed="3000"
+        pagination
+        navigation
+        class="rounded-none"
+      >
+        <SwiperSlide
+          v-for="(slide, i) in slides"
+          :key="i"
+          class="relative flex items-center justify-center w-full h-auto overflow-hidden md:w-3/4"
         >
-          <h2
-            class="text-2xl font-extrabold tracking-wide text-white md:text-4xl drop-shadow-lg"
+          <img
+            :src="slide.img"
+            :alt="slide.title"
+            class="object-cover w-full h-full transition-transform duration-[2000ms] ease-in-out"
+          />
+
+          <!-- Overlay -->
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center bg-black/40 backdrop-blur-sm"
           >
-            {{ slide.title }}
-          </h2>
-          <p
-            class="max-w-2xl mt-3 text-base leading-relaxed text-gray-200 md:text-lg"
-          >
-            {{ slide.desc }}
-          </p>
-        </div>
-      </SwiperSlide>
-      <!-- Navigation arrows -->
-      <div class="absolute z-20 -translate-y-1/2 swiper-button-prev after:hidden left-2 md:left-6 top-1/2"></div>
-      <div class="absolute z-20 -translate-y-1/2 swiper-button-next after:hidden right-2 md:right-6 top-1/2"></div>
-    </Swiper>
+            <h2
+              class="text-2xl font-extrabold tracking-wide text-white md:text-4xl drop-shadow-lg"
+            >
+              {{ slide.title }}
+            </h2>
+            <p
+              class="max-w-2xl mt-3 text-base leading-relaxed text-gray-200 md:text-lg"
+            >
+              {{ slide.desc }}
+            </p>
+          </div>
+        </SwiperSlide>
+        <!-- Navigation arrows -->
+        <div class="absolute z-20 -translate-y-1/2 swiper-button-prev after:hidden left-2 md:left-6 top-1/2"></div>
+        <div class="absolute z-20 -translate-y-1/2 swiper-button-next after:hidden right-2 md:right-6 top-1/2"></div>
+      </Swiper>
+    </div>
   </div>
 </template>
 

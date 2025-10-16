@@ -4,7 +4,7 @@ import SectHeader from '../SectHeader.vue';
 
 </script>
 <template>
-    <div class="flex flex-col space-y-4">
+    <div class="flex flex-col space-y-5">
         <SectHeader message="Software Development"/>        
         <div class="grid w-full grid-cols-1 px-2 gap-9 md:grid-cols-2 lg:grid-cols-3">
             <!--Design-->

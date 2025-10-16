@@ -5,7 +5,7 @@ const isModalOpen = ref(false);
 
 </script>
 <template>
-    <div class="flex flex-col items-center justify-center w-full px-2 space-y-5 md:items-start md:space-y-5 dark: bg-inherit md:max-w-72">
+    <div class="flex flex-col items-center justify-center w-full px-2 space-y-5 md:items-start md:space-y-5 dark: bg-inherit md:w-1/3">
         <img src="../assets/images/MeAgentFB.jpg"class="w-full rounded-lg drop-shadow" alt="">
         <div class="flex items-center justify-between w-full">
             <div class="flex flex-col w-1/2 items-start space-y-0.5 md:items-start">

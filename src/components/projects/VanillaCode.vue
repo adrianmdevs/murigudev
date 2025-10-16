@@ -4,9 +4,9 @@ import SectHeader from '../SectHeader.vue';
     
 </script>
 <template>
-    <div class="flex flex-col">
+    <div class="flex flex-col space-y-4">
         <SectHeader message="Vanilla code"/>
-        <div class="flex flex-col space-y-2">
+        <div class="flex flex-col px-2 space-y-2">
             <p>This section contains vanilla source code</p>
             <p>You can click each repo to view the code</p>
             <p>Alternatively, you can skip directly to my github account by clicking the button above</p>
@@ -26,7 +26,6 @@ import SectHeader from '../SectHeader.vue';
                 </button>
                 
             </div>
-
             <div class="flex flex-col space-y-2.5 p-2.5 w-3/4 border md:w-72 rounded-xl">
                 <div class="flex">
                     <span class="text-lg font-semibold">PYTHON_PATH</span>
