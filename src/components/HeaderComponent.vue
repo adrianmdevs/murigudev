@@ -17,7 +17,7 @@ onUnmounted(()=>{
 })
 </script>
 <template>
-    <header class="w-full px-6 py-2 rounded-lg shadow-sm z-99 max-sm:px-3 dark:bg-inherit md:border md:border-gray-300 md:dark:border-gray-600">
+    <header class="w-full fixed top-0 z-[999] px-6 py-4 border-b bg-gray-200 border-gray-500/20 dark:border-gray-500/50 shadow-sm md:rounded-lg z-99 max-sm:px-3 dark:bg-black md:border-gray-300">
         <div class="flex flex-row justify-between w-full lg:container lg:mx-auto">
         <img src="../assets/images/murigu.png" class="w-1/3 h-auto lg:w-1/4" alt="">
         <button @click="toggleDark" class="text-xl focus:outline-none pe-1.5">

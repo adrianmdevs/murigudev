@@ -8,7 +8,7 @@ const props = defineProps({
   }
 })
 
-// Disable background scroll when modal is open
+// watcher disables background scroll when modal is open
 watch(
   () => props.isOpen,
   (newVal) => {
@@ -16,16 +16,16 @@ watch(
   }
 )
 
-// Safety cleanup on unmount
+// safety cleanup on unmount
 onUnmounted(() => {
   document.body.style.overflow = ''
 })
 
-// Emit event for closing modal
+// emit event for closing modal
 const emit = defineEmits(['close'])
 
-// Handle outside click (overlay)
-const handleOverlayClick = (e) => {
+// handle outside click (click on overlay closes modal)
+const handleOverlayClick = e => {
   if (e.target === e.currentTarget) {
     emit('close')
   }
@@ -49,7 +49,7 @@ const handleOverlayClick = (e) => {
     >
       <!-- Modal content container -->
       <div
-        class="relative flex flex-col h-auto p-6 space-y-8 text-white transition-transform transform bg-white border shadow-2xl rounded-2xl dark:bg-secondary-dark w-72 md:w-96 dark:border-gray-300"
+        class="relative flex flex-col h-auto p-6 space-y-4 text-white transition-transform transform bg-white border shadow-2xl rounded-2xl dark:bg-secondary-dark w-72 md:w-96 dark:border-gray-300"
       >
         <!-- Close button -->
         <button
@@ -87,6 +87,17 @@ const handleOverlayClick = (e) => {
                 <img src="/src/assets/icons/Chevron-right.svg" alt="chevron" />
               </a>
             </div>
+            <!--Gmail-->
+            <div class="flex flex-row items-center justify-between text-lg dark:text-white">
+              <div class="flex flex-row w-full space-x-4">
+                <img src="/src/assets/icons/gmail.svg" class="w-10 h-10" alt="telegram" />
+                <span>Gmail</span>
+              </div>
+              <a href="#">
+                <img src="/src/assets/icons/Chevron-right.svg" class="w-4 h-4" alt="chevron" />
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
