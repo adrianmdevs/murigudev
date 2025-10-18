@@ -13,7 +13,7 @@ let previousIndex = routeOrder.indexOf(route.path);
 let lastNavigationTime = Date.now();
 let isBackNavigation = false;
 
-// Detect browser back/forward
+//detect browser back/forward
 window.addEventListener("popstate", () => {
   isBackNavigation = true;
   lastNavigationTime = Date.now();
@@ -79,36 +79,45 @@ function cancelExit() {
 const isActive = (path) => route.path === path;
 
 const baseLink =
-  "relative transition-all duration-300 hover:text-gray-700 dark:hover:text-gray-50 after:content-[''] after:absolute after:left-1/2 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:opacity-0 after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full hover:after:opacity-100";
+  "relative transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 " +
+  "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-0 after:h-[2px] " +
+  "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-0 after:transition-all after:duration-300 " +
+  "hover:after:w-full hover:after:opacity-100 after:rounded";
 
 const activeLink =
-  "text-blue-800 dark:text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-10px] after:w-full after:h-[2px] after:bg-black dark:after:bg-gray-50 after:opacity-100 after:-translate-x-1/2";
+  "text-blue-600 dark:text-blue-400 " +
+  "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-full after:h-[2px] " +
+  "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-100 after:rounded";
+
+
 </script>
 
 <template>
-  <div class="relative min-h-screen py-4 overflow-hidden dark:bg-black dark:text-white">
+  <div class="relative min-h-screen overflow-hidden dark:bg-black dark:text-white">
     <!-- Navbar -->
-    <nav
-      class="sticky w-full border-b border-gray-50 top-0 z-10 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-400 bg-inherit space-x-14 md:justify-evenly"
-    >
-      <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
-        Home
-      </RouterLink>
+<nav
+   class="sticky w-full border-b border-gray-300 dark:border-gray-700 top-0 z-10 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
+>
+  <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
+    Home
+  </RouterLink>
 
-      <RouterLink
-        to="/about"
-        :class="[baseLink, isActive('/about') ? activeLink : '']"
-      >
-        About
-      </RouterLink>
+  <RouterLink
+    to="/about"
+    :class="[baseLink, isActive('/about') ? activeLink : '']"
+  >
+    About
+  </RouterLink>
 
-      <RouterLink
-        to="/project"
-        :class="[baseLink, isActive('/project') ? activeLink : '']"
-      >
-        Projects
-      </RouterLink>
-    </nav>
+  <RouterLink
+    to="/project"
+    :class="[baseLink, isActive('/project') ? activeLink : '']"
+  >
+    Projects
+  </RouterLink>
+</nav>
+
+   
 
     <!-- Page Transitions -->
     <main class="relative w-full overflow-hidden">
