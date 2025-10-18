@@ -9,16 +9,31 @@ const transitionName = ref("slide-left");
 const routeOrder = ["/", "/about", "/project"];
 
 let previousIndex = routeOrder.indexOf(route.path);
+let lastNavigationTime = Date.now();
+let isBackNavigation = false;
+
+// Detect browser back/forward
+window.addEventListener("popstate", () => {
+  isBackNavigation = true;
+  lastNavigationTime = Date.now();
+});
 
 watch(
   () => route.fullPath,
   () => {
     const currentIndex = routeOrder.indexOf(route.path);
 
-    if (currentIndex > previousIndex) {
-      transitionName.value = "slide-left"; // Forward (Home -> About)
-    } else if (currentIndex < previousIndex) {
-      transitionName.value = "slide-right"; // Backward (Projects -> About)
+    // If navigation triggered by back button
+    if (isBackNavigation && Date.now() - lastNavigationTime < 300) {
+      transitionName.value = "slide-right";
+      isBackNavigation = false;
+    } else {
+      // Normal navigation via RouterLink
+      if (currentIndex > previousIndex) {
+        transitionName.value = "slide-left"; // Forward (Home -> About)
+      } else if (currentIndex < previousIndex) {
+        transitionName.value = "slide-right"; // Backward (Projects -> About)
+      }
     }
 
     previousIndex = currentIndex;
@@ -34,6 +49,7 @@ const baseLink =
 const activeLink =
   "text-blue-800 dark:text-white after:content-[''] after:absolute after:left-1/2 after:bottom-[-10px] after:w-full after:h-[2px] after:bg-black dark:after:bg-gray-50 after:opacity-100 after:-translate-x-1/2";
 </script>
+
 
 <template>
   <div class="min-h-screen py-4 overflow-hidden dark:bg-black dark:text-white">
