@@ -10,7 +10,7 @@ import SectHeader from '../SectHeader.vue';
                 <div>
                     <p>Explore my Figma design projects on behance</p>
                 </div>
-                <a href="#" class="flex items-center justify-center w-full py-2 text-white bg-green-600 rounded-xl">
+                <a href="https://www.behance.net/murigugitonga" target="_blank" class="flex items-center justify-center w-full py-2 text-white bg-green-600 rounded-xl">
                     <span>Explore Now</span>
                 </a>
             </div>
