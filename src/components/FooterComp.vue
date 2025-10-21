@@ -1,7 +1,7 @@
 <template>
     <footer class="block mx-2">
         <div class="flex flex-col space-y-3">
-            <div class="flex items-center text-[18px] justify-between w-full pb-3 border-b-2 border-green-500">
+            <div class="flex items-center text-[18px] justify-between w-full pb-3 border-b-2 border-green-500 dark:text-gray-200">
                 <span>Blog</span>
                 <img src="../assets/icons/navigation-arrow-arrows-direction-right-icon.svg" alt="">
             </div>

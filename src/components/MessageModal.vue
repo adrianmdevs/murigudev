@@ -65,23 +65,22 @@ const handleOverlayClick = e => {
             Send me a message
           </h2>
 
-          <div class="flex flex-col font-medium space-y-7 pe-5">
+          <div class="flex flex-col space-y-5 font-medium pe-5">
             <!-- WhatsApp -->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
-              <div class="flex flex-row w-full space-x-4">
+              <div class="flex items-center w-full space-x-4">
                 <img src="/src/assets/icons/whatsapp.svg" class="w-10 h-10" alt="whatsapp" />
-                <span>WhatsApp</span>
+                <span class="text-sm">WhatsApp</span>
               </div>
               <a href="#">
                 <img src="/src/assets/icons/Chevron-right.svg" alt="chevron" />
               </a>
             </div>
-
             <!-- Telegram -->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
-              <div class="flex flex-row w-full space-x-4">
+              <div class="flex items-center w-full space-x-4">
                 <img src="/src/assets/images/telegram.png" class="w-10 h-10" alt="telegram" />
-                <span>Telegram</span>
+                <span class="text-sm">Telegram</span>
               </div>
               <a href="#">
                 <img src="/src/assets/icons/Chevron-right.svg" alt="chevron" />
@@ -89,9 +88,9 @@ const handleOverlayClick = e => {
             </div>
             <!--Gmail-->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
-              <div class="flex flex-row w-full space-x-4">
+              <div class="flex items-center w-full space-x-4">
                 <img src="/src/assets/icons/gmail.svg" class="w-10 h-10" alt="telegram" />
-                <span>Gmail</span>
+                <span class="text-sm">Gmail</span>
               </div>
               <a href="#">
                 <img src="/src/assets/icons/Chevron-right.svg" class="w-4 h-4" alt="chevron" />

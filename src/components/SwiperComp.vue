@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import img1 from "../assets/images/aerospaceProfile.png";
-import img2 from "../assets/images/hero2Defence.png";
-import img3 from "../assets/images/Drone.jpeg";
+import img1 from "../assets/images/modifiedBSCard.png";
+import img2 from "../assets/images/muriguprograms.png";
+import img3 from "../assets/images/servers.jpeg";
 
 const slides = [
   {

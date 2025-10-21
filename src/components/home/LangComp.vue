@@ -1,5 +1,6 @@
 <script setup>
 import SectHeader from '../SectHeader.vue';
+import ToolsnTech from '../ToolsnTech.vue';
 
 
 </script>
@@ -87,7 +88,9 @@ import SectHeader from '../SectHeader.vue';
                         <span>Laravel</span>
                     </div>
                 </div>
-            </div>           
+            </div>
+            <!--Tools & Technologies-->
+            <ToolsnTech/>
         </div>
     </div>
 </template>
