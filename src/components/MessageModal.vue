@@ -61,7 +61,7 @@ const handleOverlayClick = e => {
 
         <!-- Modal content -->
         <div class="flex flex-col text-gray-900">
-          <h2 class="mb-4 text-[18px] font-semibold text-start dark:text-gray-50">
+          <h2 class="mb-4 text-[17px] font-semibold text-start dark:text-gray-50">
             Send me a message
           </h2>
 

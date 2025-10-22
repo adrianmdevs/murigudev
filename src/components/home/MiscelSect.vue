@@ -14,7 +14,7 @@ import SectHeader from '../SectHeader.vue';
                 <li>REST API development & Consumption</li>
                 <li>Payment Gateway integration</li>
             </ul>
-            <hr class="md:hidden">
+            <div class="hidden border border-b-2 border-gray-100 md:block"></div>
             <ul class="flex flex-col space-y-2 text-[15px] md:text-[18px]">
                 <li>Data Entry with Excel</li>
                 <li>Bash scripting w/ linux</li>

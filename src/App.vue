@@ -6,7 +6,7 @@ import SelfSection from './components/selfSection.vue';
 </script>
 <template>
   <div class="block bg-slate-200 dark:bg-[#010101] transition-all ease-in-out duration-300">
-    <div class="flex flex-col items-center justify-center min-h-screen pt-5 space-y-20 md:space-y-16 md:mx-8 lg:container lg:mx-auto">
+    <div class="flex flex-col items-center justify-center min-h-screen pt-5 space-y-10 md:space-y-16 md:mx-8 lg:max-w-6xl lg:container lg:mx-auto">
       <headerComponent/>
       <div class="relative flex flex-col items-start w-full space-y-8 md:flex-row md:justify-center">
         <SelfSection/>

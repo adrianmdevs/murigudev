@@ -49,8 +49,8 @@ onBeforeUnmount(() => {
 function handlePopState() {
   if (route.path === "/") {
     showExitModal.value = true;
-    document.body.style.overflow = "hidden"; // Disable background scroll
-    history.pushState(null, "", "/"); // Prevent immediate leave
+    document.body.style.overflow = "hidden"; // disable background scroll
+    history.pushState(null, "", "/"); // prevent immediate leave
   }
 }
 
@@ -62,10 +62,10 @@ function confirmExit() {
   // Try to close the tab (works in PWAs / WebViews)
   window.close();
 
-  // Fallback: if still open, redirect to external site
+  // fallback: if still open, redirect to external site
   setTimeout(() => {
     if (!document.hidden) {
-      window.location.href = "https://www.google.com"; // change this to your desired exit page
+      window.location.href = "https://www.google.com"; //> change external redirect to chrome homepage
     }
   }, 300);
 }
@@ -76,13 +76,14 @@ function cancelExit() {
   history.pushState(null, "", "/");
 }
 
-const isActive = (path) => route.path === path;
+const isActive = path => route.path === path;
 
 const baseLink =
   "relative transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 " +
   "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-0 after:h-[2px] " +
   "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-0 after:transition-all after:duration-300 " +
   "hover:after:w-full hover:after:opacity-100 after:rounded";
+  // i'm dead sure this caught you off-guard ;)
 
 const activeLink =
   "text-blue-600 dark:text-blue-400 " +
@@ -96,7 +97,7 @@ const activeLink =
   <div class="relative min-h-screen overflow-hidden dark:bg-black dark:text-white">
     <!-- Navbar -->
 <nav
-   class="sticky w-full border-b border-gray-300 dark:border-gray-700 top-0 z-10 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
+   class="sticky top-0 z-20 w-full border-b border-gray-300 dark:border-gray-700 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
 >
   <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
     Home
