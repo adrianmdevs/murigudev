@@ -1,11 +1,11 @@
 <template>
     <footer class="block mx-2">
         <div class="flex flex-col space-y-3">
-            <div class="flex items-center text-[18px] justify-between w-full pb-3 border-b-2 border-green-500 dark:text-gray-200">
+            <div class="flex items-center text-[18px] justify-between w-full pb-3 border-b border-black dark:border-green-500 dark:text-gray-200">
                 <span>Blog</span>
                 <img src="../assets/icons/navigation-arrow-arrows-direction-right-icon.svg" alt="">
             </div>
-            <div class="flex justify-between dark:text-gray-200">
+            <div class="flex justify-between w-full dark:text-gray-200">
                 <!--Socials-->
                 <nav class="flex flex-col space-y-4">
                     <a href="#">
@@ -24,7 +24,7 @@
                         </svg>
                     </a>
                 </nav>
-                <img src="../assets/images/murigu.png" class="w-1/2 h-auto" alt="">
+                <img src="../assets/images/murigu.png" class="w-1/3" alt="">
                 <nav class="flex flex-col space-y-4 dark:text-gray-200">
                     <a href="#">
                         <svg class="w-12 h-12" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="m116 3h-104a8.91 8.91 0 0 0 -9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81v-104.42a8.93 8.93 0 0 0 -9-8.77z" fill="#0076b2"/><g fill="#fff"><path d="m21.06 48.73h18.11v58.27h-18.11zm9.06-29a10.5 10.5 0 1 1 -10.5 10.49 10.5 10.5 0 0 1 10.5-10.49"/><path d="m50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41 18.34-.04 21.74 12.03 21.74 27.68v32h-18.11v-28.35c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15v28.79h-18.08z"/></g></svg>
@@ -36,10 +36,10 @@
                     <a href="#">Discord</a>
                 </nav>
             </div>
-            <div class="flex justify-center mx-12 border-t border-green-500 border-x rounded-t-xl dark:text-gray-100">
-                <div class="flex flex-col items-center">
-                    <p>Powered by Vue3, tailwind and strapi</p>
-                    <p>Murigu Gitonga2025</p>
+            <div class="flex justify-center mx-12 border-t border-black dark:border-green-500 border-x rounded-t-xl dark:text-gray-100">
+                <div class="flex flex-col items-center py-2 space-y-1 text-xs text-gray-600 dark:text-gray-300">
+                    <p>Powered by Vue3, Tailwind and Strapi</p>
+                    <p>Murigu Gitonga 2025</p>
                     <p>All Rights Reserved</p>
                 </div>
             </div>

@@ -94,42 +94,38 @@ const activeLink =
 </script>
 
 <template>
-  <div class="relative min-h-screen overflow-hidden dark:bg-black dark:text-white">
+  <div class="relative min-h-screen dark:bg-black dark:text-white">
     <!-- Navbar -->
-<nav
-   class="sticky top-0 z-20 w-full border-b border-gray-300 dark:border-gray-700 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
->
-  <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
-    Home
-  </RouterLink>
+    <nav
+      class="sticky top-1 z-50 w-full border-b border-gray-300 dark:border-gray-700 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
+    >
+      <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
+        Home
+      </RouterLink>
 
-  <RouterLink
-    to="/about"
-    :class="[baseLink, isActive('/about') ? activeLink : '']"
-  >
-    About
-  </RouterLink>
+      <RouterLink
+        to="/about"
+        :class="[baseLink, isActive('/about') ? activeLink : '']"
+      >
+        About
+      </RouterLink>
 
-  <RouterLink
-    to="/project"
-    :class="[baseLink, isActive('/project') ? activeLink : '']"
-  >
-    Projects
-  </RouterLink>
-</nav>
-
-   
-
-    <!-- Page Transitions -->
-    <main class="relative w-full overflow-hidden">
+      <RouterLink
+        to="/project"
+        :class="[baseLink, isActive('/project') ? activeLink : '']"
+      >
+        Projects
+      </RouterLink>
+    </nav>
+    <!-- page Transitions -->
+    <main class="relative z-10 w-full overflow-y-auto">
       <RouterView v-slot="{ Component }">
         <Transition :name="transitionName" mode="out-in">
           <component :is="Component" :key="route.fullPath" />
         </Transition>
       </RouterView>
     </main>
-
-    <!-- Exit Confirmation Modal -->
+    <!-- exit Confirmation Modal -->
     <transition name="fade">
       <div
         v-if="showExitModal"

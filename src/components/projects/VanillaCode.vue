@@ -26,18 +26,7 @@ import SectHeader from '../SectHeader.vue';
                 </button>
                 
             </div>
-            <div class="flex flex-col space-y-2.5 p-2.5 w-3/4 border md:w-72 rounded-xl">
-                <div class="flex">
-                    <span class="text-lg font-semibold">PYTHON_PATH</span>
-                </div>
-                <div>
-                    <p>Learning code for Python</p>
-                </div>
-                <button class="w-full py-2.5 rounded-xl border border-green-400">
-                    <span>Code</span>
-                </button>
-                
-            </div>
+           
         </div>
     </div>
 </template>
