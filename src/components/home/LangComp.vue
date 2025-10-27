@@ -30,23 +30,23 @@ import ToolsnTech from '../ToolsnTech.vue';
             </div>
             <!--Frontend-->
             <div class="w-full p-3 space-y-3 rounded-lg shadow-md">
-                <span class="font-medium text-gray-600 dark:text-gray-400">Frontend Development</span>
+                <span class="font-medium text-gray-600 dark:text-gray-400">Frontend Development</span><!--Development type(frontend)-->
                 <div class="grid grid-cols-3 md:grid-cols-2">
                     <div class="flex flex-col space-y-2">
-                        <img src="/src/assets/icons/html-5-svgrepo-com.svg" class="w-10 h-10" alt="">
-                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">HTML 5</span>
+                        <img src="/src/assets/icons/html-5-svgrepo-com.svg" class="w-10 h-10" alt=""> <!--Language icon(HTML)-->
+                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">HTML 5</span> <!--Language name-->
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <img src="/src/assets/icons/css-3-svgrepo-com.svg" class="w-10 h-10" alt="">
-                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">CSS 3</span>
+                        <img src="/src/assets/icons/css-3-svgrepo-com.svg" class="w-10 h-10" alt=""><!--Language icon(CSS)-->
+                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">CSS 3</span><!--Language name-->
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <img src="/src/assets/icons/javascript-svgrepo-com.svg" class="w-10 h-10" alt="">
-                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">Javascript</span>
+                        <img src="/src/assets/icons/javascript-svgrepo-com.svg" class="w-10 h-10" alt=""><!--Language icon(Javascript)-->
+                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">Javascript</span><!--Language name-->
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <img src="/src/assets/icons/typescript-svgrepo-com.svg" class="w-10 h-10" alt="">
-                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">Typescript</span>
+                        <img src="/src/assets/icons/typescript-svgrepo-com.svg" class="w-10 h-10" alt=""><!--Language icon(Typescript)-->
+                        <span class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300">Typescript</span><!--Language name-->
                     </div>
                 </div>
             </div>

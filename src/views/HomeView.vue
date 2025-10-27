@@ -1,10 +1,12 @@
 <script setup>
 import CustomDivider from '../components/CustomDivider.vue';
 //import HeroSect from '../components/home/HeroSect.vue';
-import LangComp from '../components/home/LangComp.vue';
+//import LangComp from '../components/home/LangComp.vue';
+import LangParent from '../components/home/LangParent.vue';
 import MiscelSect from '../components/home/MiscelSect.vue';
 import TestimonialComp from '../components/home/TestimonialComp.vue';
 import SwiperComp from '../components/SwiperComp.vue';
+
 
 
 </script>
@@ -13,7 +15,7 @@ import SwiperComp from '../components/SwiperComp.vue';
         <SwiperComp/>
         <!-- <HeroSect/> -->
         <CustomDivider/>
-        <LangComp/>
+        <LangParent/>
         <CustomDivider/>
         <TestimonialComp/>
         <CustomDivider/>

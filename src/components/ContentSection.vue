@@ -59,7 +59,7 @@ function confirmExit() {
   showExitModal.value = false;
   document.body.style.overflow = "auto";
 
-  // Try to close the tab (works in PWAs / WebViews)
+  // close the tab (works in PWAs / WebViews)
   window.close();
 
   // fallback: if still open, redirect to external site
@@ -118,7 +118,7 @@ const activeLink =
       </RouterLink>
     </nav>
     <!-- page Transitions -->
-    <main class="relative z-10 w-full overflow-y-auto">
+    <main class="relative z-10 w-full">
       <RouterView v-slot="{ Component }">
         <Transition :name="transitionName" mode="out-in">
           <component :is="Component" :key="route.fullPath" />
@@ -167,7 +167,7 @@ const activeLink =
 .slide-left-leave-active,
 .slide-right-enter-active,
 .slide-right-leave-active {
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .slide-left-enter-from {
   opacity: 0;
