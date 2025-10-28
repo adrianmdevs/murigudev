@@ -8,7 +8,7 @@ import PageHeader from '../PageHeader.vue';
 // import AboutCard from './AboutCard.vue';
 
 
-//Define the cards data
+// //Define the cards data
 // const profileCards = [
 //   {
 //     imageSrc: CardOne,
