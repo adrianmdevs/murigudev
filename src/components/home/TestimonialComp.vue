@@ -56,6 +56,21 @@ import SectHeader from '../SectHeader.vue';
                     
                 </div>
             </div>
+             <div class="flex flex-col items-end space-y-6 text-gray-800 dark:text-gray-300">
+                <p class="text-[15px] text-end md:text-[18px]">
+                    Murigu Gitonga is that one guy in a team that will always see solutions
+                    where none seem to exist. Combined with his intricate persistence, he is  
+                    a force to reckon with.
+                </p>
+                <!--Testifier-->
+                <div class="flex items-end space-x-5">  
+                    <div class="flex flex-col items-end">
+                        <span class="font-medium dark:text-gray-100">Mira Murati</span>
+                        <span>CEO, Thinking machines lab</span>
+                    </div>
+                    <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full" alt="">     
+                </div>
+            </div>
         </div>
     </div>
 </template>
