@@ -8,7 +8,7 @@
 <template>
     <div class="flex flex-col border border-gray-300 rounded-lg w-80">
         <div>
-            <h2 class="font-medium">{{ projectTitle }}</h2>
+            <h2 class="font-medium text-gray-500">{{ projectTitle }}</h2>
             <p>{{ projectDetail }}</p>
         </div>
         <!--Language svg-->

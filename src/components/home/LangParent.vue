@@ -2,7 +2,7 @@
 import LangCompMain from './LangCompMain.vue'
 
 import figmaIcon from '@/assets/icons/figma-svgrepo-com.svg'
-import inksIcon from '@/assets/icons/instagram-icon.svg'
+import inksIcon from '@/assets/icons/Instagram-icon.svg'
 import GIMPIcon from '@/assets/icons/mixpanel-svgrepo-com.svg'
 
 // import icons
