@@ -17,7 +17,7 @@ defineProps({
 
 <template>
   <div
-    class="w-full p-3 space-y-3 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-all hover:shadow-lg"
+    class="w-full p-3 space-y-3 rounded-lg shadow-md bg-white dark:bg-[#323435] transition-all hover:shadow-lg"
   >
     <!-- Specialty / Category -->
     <span class="font-medium text-gray-600 dark:text-gray-400">
@@ -34,8 +34,8 @@ defineProps({
         <img
           :src="skill.icon"
           :alt="skill.name"
-          class="w-10 h-10 object-contain"
-          loading="lazy"
+          class="object-contain w-10 h-10"
+          loading="eager"
         />
         <span
           class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300"

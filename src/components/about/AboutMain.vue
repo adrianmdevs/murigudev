@@ -40,7 +40,7 @@ import PageHeader from '../PageHeader.vue';
                 <img src="@/assets/images/modifiedBSCard.png" class="shadow-sm rounded-xl" alt="">
                 <div class="flex flex-col space-y-2">
                     <span class="text-[21px] font-semibold dark:text-gray-50">Passionate Designer</span>
-                    <p class="text-[16px] text-gray-600 dark:text-gray-200">
+                    <p class="text-[17px] leading leading-relaxed text-gray-600 dark:text-gray-200">
                         Creating passionate designs is more of a hobby than a proffesion
                         I create awesome designs that resonate with the audience and
                         make a hallmark impression
@@ -52,8 +52,8 @@ import PageHeader from '../PageHeader.vue';
             <div class="flex flex-col space-y-3 px-2.5 md:max-w-4xl">
                 <img src="@/assets/images/MuriguAIDarkCard2.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A design by yours truly" loading="eager">
                 <div class="flex flex-col space-y-2">  
-                    <span class="text-[18px] font-semibold">Computer programmer</span>
-                    <p class="text-[16px] text-gray-600 dark:text-gray-200">
+                    <span class="text-[21px] font-semibold">Computer programmer</span>
+                    <p class="text-[17px] text-gray-600 dark:text-gray-200">
                         I started with PHP and after seeing the magic a few lines of code could do, I never
                         looked back. I am currently well versed with the languages aforementioned but to me languages
                         are just a tool to solve clearly elaborated systems.
@@ -64,11 +64,11 @@ import PageHeader from '../PageHeader.vue';
             <div class="flex flex-col space-y-3 px-2.5 md:max-w-4xl">
                 <img src="@/assets/images/MuriguAIDarkCard2.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A group of people in an office" loading="eager">
                 <div class="flex flex-col space-y-1">
-                    <span class="text-[18px] font-semibold">Creative Innovator</span>
-                    <p class="text-[16px] text-gray-600 dark:text-gray-200">
-                        I believe that software development, like any great product is 
-                        a result of co-ordinated team effort. Working in close high-paced startup 
-                        environment has taugh me that
+                    <span class="text-[21px] font-semibold">Team Player</span>
+                    <p class="text-[17px] text-gray-600 dark:text-gray-200">
+                        Great products are as a result of fluid team co-ordination, elaborate
+                        feedback loops and critical review, also working in teams is the best way 
+                        to go.
                     </p>
                 </div>
             </div>
