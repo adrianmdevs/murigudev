@@ -1,6 +1,10 @@
 <script setup>
 import { watch, onUnmounted } from 'vue'
+import SocialLink from './SocialLink.vue'
 
+import telegram from '@/assets/icons/icons8-telegram-app.svg'
+import greenapp from '@/assets/icons/icons8-whatsapp.svg'
+import gmail from '@/assets/icons/icons8-gmail.svg'
 const props = defineProps({
   isOpen: {
     type: Boolean,
@@ -11,7 +15,7 @@ const props = defineProps({
 // watcher disables background scroll when modal is open
 watch(
   () => props.isOpen,
-  (newVal) => {
+  newVal => {
     document.body.style.overflow = newVal ? 'hidden' : ''
   }
 )
@@ -69,34 +73,39 @@ const handleOverlayClick = e => {
             <!-- WhatsApp -->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
-                <img src="/src/assets/icons/whatsapp.svg" class="w-10 h-10" alt="whatsapp" />
-                <span class="text-sm">WhatsApp</span>
+              <SocialLink 
+                        href="https://facebook.com"
+                        :icon="greenapp"
+                        label="Facebook"
+                        tooltip="Check me out on facebook"
+                    />
+              <span class="text-sm">WhatsApp</span>
               </div>
-              <a href="#">
-                <img src="/src/assets/icons/Chevron-right.svg" alt="chevron" />
-              </a>
             </div>
             <!-- Telegram -->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
-                <img src="/src/assets/images/telegram.png" class="w-10 h-10" alt="telegram" />
-                <span class="text-sm">Telegram</span>
+              <SocialLink 
+                        href="https://facebook.com"
+                        :icon="telegram"
+                        label="Facebook"
+                        tooltip="Check me out on facebook"
+                    />
+              <span class="text-sm">WhatsApp</span>
               </div>
-              <a href="#">
-                <img src="/src/assets/icons/Chevron-right.svg" alt="chevron" />
-              </a>
             </div>
             <!--Gmail-->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
-                <img src="/src/assets/icons/gmail.svg" class="w-10 h-10" alt="telegram" />
-                <span class="text-sm">Gmail</span>
+              <SocialLink 
+                        href="https://facebook.com"
+                        :icon="gmail"
+                        label="Facebook"
+                        tooltip="Check me out on facebook"
+                    />
+              <span class="text-sm">Gmail</span>
               </div>
-              <a href="#">
-                <img src="/src/assets/icons/Chevron-right.svg" class="w-4 h-4" alt="chevron" />
-              </a>
             </div>
-
           </div>
         </div>
       </div>

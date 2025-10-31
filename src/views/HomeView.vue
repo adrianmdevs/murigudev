@@ -5,6 +5,7 @@ import CustomDivider from '../components/CustomDivider.vue';
 import LangParent from '../components/home/LangParent.vue';
 import MiscelSect from '../components/home/MiscelSect.vue';
 import TestimonialComp from '../components/home/TestimonialComp.vue';
+import ToolsComp from '../components/home/ToolsComp.vue';
 import SwiperComp from '../components/SwiperComp.vue';
 
 
@@ -16,6 +17,7 @@ import SwiperComp from '../components/SwiperComp.vue';
         <!-- <HeroSect/> -->
         <CustomDivider/>
         <LangParent/>
+        <ToolsComp/>
         <CustomDivider/>
         <TestimonialComp/>
         <CustomDivider/>
