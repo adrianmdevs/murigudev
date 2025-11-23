@@ -27,7 +27,7 @@ const items = [
                 class="flex flex-col items-center justify-center flex-shrink-0 w-40 space-y-3"
                 >
                 <img :src="item.img" :alt="item.name" class="w-12 h-auto shadow-sm rounded-xl dark:invert">
-                <p class="text-center text-[13px] md:text-[15px]">{{ item.name }}</p>
+                <p class="text-center text-[13px] md:text-[15px] text-gray-500">{{ item.name }}</p>
             </div>
         </Vue3Marquee>
     </div>

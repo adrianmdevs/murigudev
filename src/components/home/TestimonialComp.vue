@@ -10,7 +10,7 @@ import SectHeader from '../SectHeader.vue';
         <div class="grid grid-cols-1 px-2 gap-7 lg:grid-cols-2 lg:gap-10">
             <!--testimonial-->
             <div class="flex flex-col items-start w-full space-y-6 leading-relaxed tracking-normal text-gray-800 dark:text-gray-300">
-                <p class="text-[13px] md:text-[15px]">
+                <p class="text-[13px] md:text-[15px] text-gray-500">
                     I was Murigu's immediate supervisor as he interned in our company
                     He exhibited peristence,superior inter and intrapersonal skills across cross-functional teams. He inspired the different teams he worked with with his infectous positive approach to problems.
                 </p>
@@ -24,7 +24,7 @@ import SectHeader from '../SectHeader.vue';
             </div>
             <!--testimonial 2-->
             <div class="flex flex-col items-end space-y-6 leading-relaxed text-gray-800 md:items-start dark:text-gray-300">
-                <p class="text-[13px] md:text-[15px] text-end lg:text-start">
+                <p class="text-[13px] text-gray-500 md:text-[15px] text-end lg:text-start">
                    Charles has been a good friend over the years. I worked with
                    him in university where we first started learning programming in general.
                    He excelled at coming up with solutions where none seemed to exist.
@@ -40,7 +40,7 @@ import SectHeader from '../SectHeader.vue';
             </div>
             <!--Testimonial 3-->
             <div class="flex flex-col items-start space-y-6 text-gray-800 dark:text-gray-300">
-                <p class="text-[13px] md:text-[15px]">
+                <p class="text-[13px] text-gray-500 md:text-[15px]">
                     I was paired with charles when he entered the software development department 
                     during his internship. What was striking about him as an intern was that he never saw 
                     bugs as challenges, rather, he embraced them as part of his learning journey. Not once did 

@@ -159,23 +159,22 @@ function onTouchEnd() {
         <div
           class="absolute flex flex-col items-start justify-center p-6 leading-relaxed rounded-lg text-start bg-black/50 bottom-10 left-5 right-4 backdrop-blur-sm"
         >
-          <h2 class="mb-2 text-xl font-semibold text-gray-100 md:text-2xl">
+          <h2 class="mb-2 text-lg font-semibold text-gray-100 md:text-xl">
             {{ slide.title }}
           </h2>
-          <p class="max-w-xl text-gray-200">
+          <p class="max-w-xl text-sm text-gray-200">
             {{ slide.description }}
           </p>
         </div>
       </div>
     </div>
-
     <!-- Navigation Buttons -->
     <button
       @click="prevSlide"
       class="absolute p-2 transition-opacity duration-500 ease-in-out -translate-y-1/2 rounded-full shadow-md opacity-0 top-1/2 left-4 bg-white/70 dark:bg-gray-900/70 group-hover:opacity-100"
     >
       <svg
-        class="w-6 h-6 text-gray-800 dark:text-gray-100"
+        class="w-5 h-5 text-gray-800 dark:text-gray-100"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -188,13 +187,12 @@ function onTouchEnd() {
         />
       </svg>
     </button>
-
     <button
       @click="nextSlide"
       class="absolute p-2 transition-opacity duration-500 ease-in-out -translate-y-1/2 rounded-full shadow-md opacity-0 top-1/2 right-4 bg-white/70 dark:bg-gray-900/70 group-hover:opacity-100"
     >
       <svg
-        class="w-6 h-6 text-gray-800 dark:text-gray-100"
+        class="w-5 h-5 text-gray-800 dark:text-gray-100"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"

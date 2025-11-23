@@ -20,7 +20,7 @@
         v-if="icon"
         :src="icon"
         :alt="label"
-        class="object-contain w-8 h-8"
+        class="object-contain w-6 h-6"
         loading="lazy"
         decoding="async"
          >
