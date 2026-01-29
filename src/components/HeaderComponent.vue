@@ -5,7 +5,7 @@ import { useThemeStore } from "@/stores/themeStore";
 const theme = useThemeStore();
 
 const opacity = ref(1);  
-const threshold = 300; // how many px to reach opacity 0
+const threshold = 800; // number of pixels to reach opacity 0
 
 const animating = ref(false);
 
@@ -28,7 +28,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 <template>
   <header
     class="
-      fixed top-0 left-0 w-full px-4 py-2 mb-20 md:py-0 z-50
+      fixed top-0 left-0 w-full px-4 py-4 rounded-b-lg mb-20 md:py-0 z-50
       md:rounded-lg border-b bg-gray-200 dark:bg-[#101011]
       shadow-sm dark:border-gray-700 border-gray-300
       transition-all duration-150 pointer-events-auto
@@ -38,8 +38,8 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     <div class="flex flex-row items-center justify-between w-full lg:max-w-6xl lg:container lg:mx-auto">
       <img
         src="@/assets/images/murigu.png"
-        class="w-40 lg:w-72"
-        alt=""
+        class="w-32 md:w-40 lg:w-72"
+        alt="Murigu label"
       />
 
       <button

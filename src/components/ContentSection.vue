@@ -54,7 +54,7 @@ function handlePopState() {
   }
 }
 
-// === Exit Handling ===
+// Exit handling
 function confirmExit() {
   showExitModal.value = false;
   document.body.style.overflow = "auto";
@@ -65,7 +65,7 @@ function confirmExit() {
   // fallback: if still open, redirect to external site
   setTimeout(() => {
     if (!document.hidden) {
-      window.location.href = "https://www.google.com"; //> change external redirect to google homepage
+      window.location.href = "https://www.google.com"; // Redirect to google homepage
     }
   }, 300);
 }
@@ -79,14 +79,14 @@ function cancelExit() {
 const isActive = path => route.path === path;
 
 const baseLink =
-  "relative transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 " +
+  "relative transition-all text-[17px] md:text-[19px] font-semibold duration-300 hover:text-blue-600 dark:hover:text-blue-400 " +
   "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-0 after:h-[2px] " +
   "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-0 after:transition-all after:duration-300 " +
   "hover:after:w-full hover:after:opacity-100 after:rounded";
-  // i'm dead sure this caught you off-guard ;)
+  // I'm dead sure this caught you off-guard ;)
 
 const activeLink =
-  "text-blue-600 dark:text-blue-400 " +
+  "text-blue-600 dark:text-blue-400 text-[17px] md:text-[19px] font-semibold" +
   "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-full after:h-[2px] " +
   "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-100 after:rounded";
   // yeap, never used tailwind so many tailwind classes at once until this too.

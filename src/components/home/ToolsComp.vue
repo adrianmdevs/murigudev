@@ -18,7 +18,7 @@ const items = [
 <template>
     <div>
         <div>
-            <span class="font-semibold text-gray-700 dark:text-gray-200 ps-4">Tools & services</span>
+            <span class="font-semibold text-gray-700 dark:text-gray-200 text-[17px] ps-4">Tools & services</span>
         </div>
     <div class="w-full py-3 shadow-sm bg-inherit dark:bg-[#323435]">
         <Vue3Marquee :speed="60" direction="left" :gradient="false" :pause-on-hover="true" class="flex flex-col space-y-5">
@@ -27,7 +27,7 @@ const items = [
                 class="flex flex-col items-center justify-center flex-shrink-0 w-40 space-y-3"
                 >
                 <img :src="item.img" :alt="item.name" class="w-12 h-auto shadow-sm rounded-xl dark:invert">
-                <p class="text-center text-[13px] md:text-[15px] text-gray-500">{{ item.name }}</p>
+                <p class="text-center text-[15px] md:text-[17px] text-gray-500">{{ item.name }}</p>
             </div>
         </Vue3Marquee>
     </div>

@@ -1,8 +1,4 @@
 <script setup>
-//import DesignComp from '../components/projects/DesignComp.vue';
-//import CustomDivider from '../components/CustomDivider.vue'
-//import VanillaCode from '../components/projects/VanillaCode.vue';
-//import FrameWorks from '../components/projects/FrameWorks.vue';
 import PageHeader from '../components/PageHeader.vue';
 import MessageComp from '../components/projects/MessageComp.vue';
 
@@ -25,14 +21,5 @@ import MessageComp from '../components/projects/MessageComp.vue';
         <div class="flex px-2 md:items-center md:justify-center">
             <MessageComp/>
         </div>
-        
-        <!--Design Comp-->
-        <!-- <DesignComp/>
-        <CustomDivider/>
-        <VanillaCode/>
-        <CustomDivider/>
-        <FrameWorks/> -->
-
-        
     </div>
 </template>

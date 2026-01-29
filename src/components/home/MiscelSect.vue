@@ -8,7 +8,7 @@ import SectHeader from '../SectHeader.vue';
         <!--Heading here-->
         <SectHeader message="Miscellaneous"/>
         <div class="grid grid-cols-1 place-items-start gap-8 justify-items-start text-gray-200 text-[13px] md:text-[15px] bg-[#192730] mx-2 rounded-xl p-3">
-            <ul class="flex flex-col leading-relaxed space-y-3 text-[15px] md:text-[18px]">
+            <ul class="flex flex-col leading-relaxed font-medium space-y-3 text-[16px] md:text-[18px]">
                 <li>&#10004; UI/UX design systems( Material UI)</li>
                 <li>&#10004; Responsive web design</li>
                 <li>&#10004; Responsive web development</li>
@@ -29,7 +29,7 @@ import SectHeader from '../SectHeader.vue';
                 <!-- <div class="h-full border border-b-2 border-gray-100 md:block"></div> -->
                 <div class="w-full mx-10 border border-b border-gray-300"></div>
             </div>
-            <ul class="flex flex-col leading-relaxed space-y-2 text-[15px] md:text-[18px]">
+            <ul class="flex flex-col font-semibold leading-relaxed space-y-2 text-[16px] md:text-[18px]">
                 <li>&#10004; Data Entry with Excel</li>
                 <li>&#10004; Bash scripting w/ linux</li>
                 <li>&#10004; General IT Support</li>
