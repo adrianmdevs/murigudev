@@ -79,14 +79,14 @@ function cancelExit() {
 const isActive = path => route.path === path;
 
 const baseLink =
-  "relative transition-all text-[17px] md:text-[19px] font-semibold duration-300 hover:text-blue-600 dark:hover:text-blue-400 " +
+  "relative transition-all text-[17px] md:text-[19px] font-medium duration-300 hover:text-blue-600 dark:hover:text-blue-400 " +
   "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-0 after:h-[2px] " +
   "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-0 after:transition-all after:duration-300 " +
   "hover:after:w-full hover:after:opacity-100 after:rounded";
   // I'm dead sure this caught you off-guard ;)
 
 const activeLink =
-  "text-blue-600 dark:text-blue-400 text-[17px] md:text-[19px] font-semibold" +
+  "text-blue-600 dark:text-blue-400 text-[17px] md:text-[19px] font-medium" +
   "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-full after:h-[2px] " +
   "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-100 after:rounded";
   // yeap, never used tailwind so many tailwind classes at once until this too.

@@ -17,7 +17,7 @@ defineProps({
 
 <template>
   <div
-    class="w-full p-3 space-y-3 rounded-lg shadow-md bg-white dark:bg-[#323435] transition-all hover:shadow-lg"
+    class="w-full p-3 space-y-6 rounded-lg shadow-md bg-white dark:bg-[#323435] transition-all hover:shadow-lg"
   >
     <!--Specialty / Category-->
     <span class="font-medium text-[19px] md:text-[21px] text-gray-700 dark:text-gray-200">
