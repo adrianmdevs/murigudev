@@ -47,7 +47,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
         class="relative flex items-center justify-center w-10 h-10 text-xl transition-all duration-300 border focus:outline-none hover:scale-110 active:scale-95"
         :class="{ 'animate-spin': animating }"
       >
-        <!-- DARK ICON -->
+        <!-- Icon dark-->
         <span
           v-if="theme.isDark"
           class="absolute transition-opacity duration-300"
@@ -59,7 +59,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
           
         </span>
 
-        <!-- LIGHT ICON -->
+        <!-- Icon light -->
         <span
           v-else
           class="absolute transition-opacity duration-300"

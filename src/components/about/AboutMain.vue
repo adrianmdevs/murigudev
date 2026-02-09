@@ -42,9 +42,10 @@ import progImage from "@/assets/images/compProgrammer.png"
                 <div class="flex flex-col space-y-1 text-gray-500 dark:text-gray-300">
                     <span class="text-[17px] md:text-[19px] font-semibold text-gray-700 dark:text-gray-200">Passionate Designer</span>
                     <p class="text-[15px] md:text-[17px] leading-relaxed text-gray-500 dark:text-gray-300">
+                        Nothing allows me to express my creative capibilty more than graphics design.
                         Creating passionate designs is more of a hobby than a proffesion
-                        I create awesome designs that resonate with the audience and
-                        make a hallmark impression
+                        I strive to create designs that amplify the message in question and resonate with
+                        target audiences across set parameters.
                     </p>
                 </div>
 
@@ -55,9 +56,9 @@ import progImage from "@/assets/images/compProgrammer.png"
                 <div class="flex flex-col space-y-1">  
                     <span class="text-[17px] md:text-[19px] font-semibold text-gray-700 dark:text-gray-200">Computer programmer</span>
                     <p class="text-[15px] leading-relaxed md:text-[17px] text-gray-500 dark:text-gray-300">
-                        I started with PHP and after seeing the magic a few lines of code could do, I never
-                        looked back. I am currently well versed with the languages aforementioned but to me languages
-                        are just a tool to solve clearly elaborated systems.
+                        I am conversant in the languages, frameworks and tools listed in the homepage.
+                        I like the take the phrase 'Programmer' over 'Software Engineer' or worse even 'coder'
+                        because what I do is more of a craft than an engineering discipline. I am a passionate programmer who loves to solve problems and create solutions that make a difference.
                     </p>
                 </div>
             </div>
@@ -67,9 +68,10 @@ import progImage from "@/assets/images/compProgrammer.png"
                 <div class="flex flex-col space-y-1">
                     <span class="text-[17px] md:text-[19px] font-semibold text-gray-700 dark:text-gray-200">Artificial Intelligence ethusiasist</span>
                     <p class="text-[15px] md:text-[17px] text-gray-500 dark:text-gray-300">
-                        AI speeds up the software development cycles through automated testing, giving
-                        developers enough time to refine architecture and orchestrate infrastructures as 
-                        a critical compononent of software driven products.
+                        Artificial intelligence has raked up both intrigue and paranoia in its wake, and is 
+                        promising to redefine the world order as it. I am staking significant effort
+                        to acquire some skills such as machine learning in realization that in the near future,
+                        AI will be the redefining technology across all industrial complexes.
                     </p>
                 </div>
             </div>

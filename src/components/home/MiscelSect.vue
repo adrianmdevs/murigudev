@@ -7,7 +7,7 @@ import SectHeader from '../SectHeader.vue';
     <div class="flex flex-col space-y-5">
         <!--Heading here-->
         <SectHeader message="Miscellaneous"/>
-        <div class="grid grid-cols-1 place-items-start gap-8 justify-items-start text-gray-200 text-[13px] md:text-[15px] bg-[#192730] mx-2 rounded-xl p-3">
+        <div class="grid grid-cols-1 place-items-start gap-8 justify-items-start text-gray-200 dark:text-gray-950 text-[13px] md:text-[15px] bg-black dark:bg-white mx-2 rounded-xl p-3">
             <ul class="flex flex-col leading-relaxed font-medium space-y-3 text-[16px] md:text-[18px]">
                 <li>&#10004; UI/UX design systems( Material UI)</li>
                 <li>&#10004; Responsive web design</li>
